@@ -3,12 +3,32 @@
   justify-content: center;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+table {
+  border: 1px solid #CCC;
 }
+
 
 th, td {
   padding: 10px;
 }
 
+th {
+  position: sticky;
+  top: 0;
+  background-color: #FFF;  
+  color: #000;
+  z-index: 1;
+}
+
+td {
+  text-align: center;
+  border-top: 1px solid #CCC;
+}
+
+tr:nth-child(even) {
+  background: #EEE;
+}
+
+tr:nth-child(odd) {
+  background: #FFF;
+}
